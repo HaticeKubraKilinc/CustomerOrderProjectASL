@@ -1,0 +1,138 @@
+
+
+
+/*   bu  kısım ana sayfada  kullanıcıların isimlerini tutan kutucukların flexible olması için yazıldı*/
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  border-radius: 90px;
+  background: #DAE0ED; 
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+
+  
+  line-height: 35px;
+  color: #1d1d66;
+  font-weight: bold;
+  font-size: 0.7345em;
+  text-align: center;
+}
+
+/*  bu kısım sayfaların arka planını için oluşturuldu */
+
+
+body {
+
+
+  background: url(asilbcfResim.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ /* tranparan box denemesi tamamlandı renk değişimi yapılabilir*/ 
+
+  .trBorder
+   { 
+    
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-bottom: 130px;
+    margin-top: 180px;
+     background:  rgba(32,21,73,.8);
+   }
+
+
+
+/* menü css*/
+
+   a:hover {
+    background-color: #394058;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  
+  background: #161240;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: darken(#FF9966, 2%);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: left; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+
+
+/* line deneme*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

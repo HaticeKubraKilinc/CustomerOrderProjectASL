@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+body{ margin:0; padding:0; }
+
+.arkaplan{ position:absolute;z-index:-1;margin:0;padding:0;height:100%;width:100%; }
+
+
+
+
+<img src=”asilbcfResim.jpg” class=”arkaplan”>
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    
+    background-color: #aaaaaa;
+}
+
+.container {
+    border-radius: 5px;
+   
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+
+
+  <form action="/index.php">
+   <div class="header-text httal htvam">
+            <h2 id="header_1" class="form-header" data-component="header">
+              MÜŞTERİ BİLGİ FORMU
+            </h2>
+          </div>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+
+    --- ---
+     <div class="header-text httal htvam">
+            <h2 id="header_1" class="form-header" data-component="header">
+              MÜŞTERİ BİLGİ FORMU
+            </h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fullname" id="id_3">
+        <label class="form-label form-label-right form-label-auto" id="label_3" for="first_3"> Görürüşülen kişi </label>
+        <div id="cid_3" class="form-input jf-required">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top;">
+              <input type="text" id="first_3" name="q3_isim[first]" class="form-textbox" size="10" value="" data-component="first" />
+              <label class="form-sub-label" for="first_3" id="sublabel_first" style="min-height:13px;"> İsim </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top;">
+              <input type="text" id="last_3" name="q3_isim[last]" class="form-textbox" size="15" value="" data-component="last" />
+              <label class="form-sub-label" for="last_3" id="sublabel_last" style="min-height:13px;"> Soy İsim </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_20">
+        <label class="form-label form-label-right form-label-auto" id="label_20" for="input_20"> Pozisyonu </label>
+        <div id="cid_20" class="form-input jf-required">
+          <input type="text" id="input_20" name="q20_yetkisi" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_19">
+        <label class="form-label form-label-right form-label-auto" id="label_19" for="input_19"> Firma Adı </label>
+        <div id="cid_19" class="form-input jf-required">
+          <input type="text" id="input_19" name="q19_firmaAdi" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_phone" id="id_11">
+        <label class="form-label form-label-right form-label-auto" id="label_11" for="input_11_area"> Telefon Numarası </label>
+        <div id="cid_11" class="form-input jf-required">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top;">
+              <input type="tel" id="input_11_area" name="q11_telefonNumarasi[area]" class="form-textbox" size="3" value="" data-component="areaCode" />
+              <span class="phone-separate">
+                 -
+              </span>
+              <label class="form-sub-label" for="input_11_area" id="sublabel_area" style="min-height:13px;"> Alan Kodu </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top;">
+              <input type="tel" id="input_11_phone" name="q11_telefonNumarasi[phone]" class="form-textbox" size="8" value="" data-component="phone" />
+              <label class="form-sub-label" for="input_11_phone" id="sublabel_phone" style="min-height:13px;"> Telefon Numarası </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_14">
+        <label class="form-label form-label-right form-label-auto" id="label_14" for="input_14"> E-posta </label>
+        <div id="cid_14" class="form-input jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top;">
+            <input type="email" id="input_14" name="q14_eposta" class="form-textbox validate[Email]" size="30" value="" data-component="email" />
+            <label class="form-sub-label" for="input_14" style="min-height:13px;"> example@example.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_16">
+        <label class="form-label form-label-right form-label-auto" id="label_16" for="input_16"> Fuar adı </label>
+        <div id="cid_16" class="form-input jf-required">
+          <input type="text" id="input_16" name="q16_fuarAdi" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_datetime" id="id_15">
+        <label class="form-label form-label-right form-label-auto" id="label_15" for="lite_mode_15"> Tarih </label>
+        <div id="cid_15" class="form-input jf-required">
+          <div data-wrapper-react="true">
+            <div style="display:none;">
+              <span class="form-sub-label-container" style="vertical-align:top;">
+                <input class="form-textbox validate[limitDate]" id="month_15" name="q15_tarih[month]" type="tel" size="2" data-maxlength="2" value="" />
+                <span class="date-separate">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_15" id="sublabel_month" style="min-height:13px;"> Ay </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top;">
+                <input class="form-textbox validate[limitDate]" id="day_15" name="q15_tarih[day]" type="tel" size="2" data-maxlength="2" value="" />
+                <span class="date-separate">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_15" id="sublabel_day" style="min-height:13px;"> Gün </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top;">
+                <input class="form-textbox validate[limitDate]" id="year_15" name="q15_tarih[year]" type="tel" size="4" data-maxlength="4" value="" />
+                <label class="form-sub-label" for="year_15" id="sublabel_year" style="min-height:13px;"> Yıl </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container" style="vertical-align:top;">
+              <input class="form-textbox validate[limitDate]" id="lite_mode_15" type="text" size="12" data-maxlength="12" value="" data-format="mmddyyyy" data-seperator="-" placeholder="mm-dd-yyyy" />
+              <label class="form-sub-label" for="lite_mode_15" id="sublabel_litemode" style="min-height:13px;"> Tarih </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top;">
+              <img class="showAutoCalendar" alt="Pick a Date" id="input_15_pick" src="https://cdn.jotfor.ms/images/calendar.png" style="vertical-align:middle;" data-component="datetime" />
+              <label class="form-sub-label" for="input_15_pick" style="min-height:13px;">  </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_9">
+        <div id="cid_9" class="form-input-wide">
+          <div data-component="divider" style="border-bottom:1px solid #e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px;">
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_21">
+        <div id="cid_21" class="form-input-wide">
+          <div id="text_21" class="form-html" data-component="text">
+            <p>Firmaya Dair Bilgiler</p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_22">
+        <label class="form-label form-label-right form-label-auto" id="label_22" for="input_22"> Üretici-Tüccar </label>
+        <div id="cid_22" class="form-input jf-required">
+          <input type="text" id="input_22" name="q22_ureticituccar" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_31">
+        <label class="form-label form-label-right form-label-auto" id="label_31" for="input_31"> Tufting-Weaving </label>
+        <div id="cid_31" class="form-input jf-required">
+          <select class="form-dropdown" id="input_31" name="q31_tuftingweaving" style="width:150px;" data-component="dropdown">
+            <option value="">  </option>
+            <option value="Tufting"> Tufting </option>
+            <option value="Weaving"> Weaving </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_23">
+        <label class="form-label form-label-right form-label-auto" id="label_23" for="input_23"> Makina sayısı </label>
+        <div id="cid_23" class="form-input jf-required">
+          <input type="text" id="input_23" name="q23_makinaSayisi" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_24">
+        <label class="form-label form-label-right form-label-auto" id="label_24" for="input_24"> Kapasite Kullanım Oranı </label>
+        <div id="cid_24" class="form-input jf-required">
+          <input type="text" id="input_24" name="q24_kapasiteKullanim24" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_25">
+        <label class="form-label form-label-right form-label-auto" id="label_25" for="input_25"> Aylık Tüketim </label>
+        <div id="cid_25" class="form-input jf-required">
+          <input type="text" id="input_25" name="q25_aylikTuketim25" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_number" id="id_32">
+        <label class="form-label form-label-right form-label-auto" id="label_32" for="input_32"> Çalışan sayısı </label>
+        <div id="cid_32" class="form-input jf-required">
+          <input type="number" id="input_32" name="q32_calisanSayisi" data-type="input-number" class=" form-number-input form-textbox" style="width:60px;" size="5" value="" placeholder="ex: 23" data-component="number" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_27">
+        <label class="form-label form-label-right form-label-auto" id="label_27" for="input_27"> Ödeme Şekli </label>
+        <div id="cid_27" class="form-input jf-required">
+          <input type="text" id="input_27" name="q27_odemeSekli" data-type="input-textbox" class="form-textbox" size="20" value="" data-component="textbox" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_address" id="id_12">
+        <label class="form-label form-label-right form-label-auto" id="label_12" for="input_12_addr_line1"> Adres </label>
+        <div id="cid_12" class="form-input jf-required">
+          <table summary="" class="form-address-table" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <span class="form-sub-label-container" style="vertical-align:top;">
+                    <input type="text" id="input_12_addr_line1" name="q12_adres[addr_line1]" class="form-textbox form-address-line" value="" data-component="address_line_1" />
+                    <label class="form-sub-label" for="input_12_addr_line1" id="sublabel_12_addr_line1" style="min-height:13px;"> Tam Adres </label>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <span class="form-sub-label-container" style="vertical-align:top;">
+                    <input type="text" id="input_12_addr_line2" name="q12_adres[addr_line2]" class="form-textbox form-address-line" size="46" value="" data-component="address_line_2" />
+                    <label class="form-sub-label" for="input_12_addr_line2" id="sublabel_12_addr_line2" style="min-height:13px;"> Adres Satırı 2 </label>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td width="50%">
+                  <span class="form-sub-label-container" style="vertical-align:top;">
+                    <input type="text" id="input_12_city" name="q12_adres[city]" class="form-textbox form-address-city" size="21" value="" data-component="city" />
+                    <label class="form-sub-label" for="input_12_city" id="sublabel_12_city" style="min-height:13px;"> Teslim yeri Şehir </label>
+                  </span>
+                </td>
+                <td>
+                  <span class="form-sub-label-container" style="vertical-align:top;">
+                    <input type="text" id="input_12_state" name="q12_adres[state]" class="form-textbox form-address-state" size="22" value="" data-component="state" />
+                    <label class="form-sub-label" for="input_12_state" id="sublabel_12_state" style="min-height:13px;"> Ülke / İl </label>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td width="50%">
+                  <span class="form-sub-label-container" style="vertical-align:top;">
+                    <input type="text" id="input_12_postal" name="q12_adres[postal]" class="form-textbox form-address-postal" size="10" value="" data-component="zip" />
+                    <label class="form-sub-label" for="input_12_postal" id="sublabel_12_postal" style="min-height:13px;"> Posta / Posta Kodu </label>
+                  </span>
+                </td>
+
+
+--- ---
+
+  </form>
+
+</div>
+
+
+<form action="index.php" method="post">
+ İsim: <br/>
+ <input type="text" name="isim" /><br/>
+
+ Soyisim: <br/>
+ <input type="text" name="soyisim" /><br/>
+
+ E-mail: <br/>
+ <input type="text" name="mail" /><br/>
+
+ Cinsiyet: <br/>
+ <input type="radio" name="cinsiyet" value="e" /> Erkek<br/>
+ <input type="radio" name="cinsiyet" value="k" /> Kadın<br/>
+
+ Mesaj: <br/>
+ <textarea name="mesaj"></textarea><br/>
+ <input type="submit" value="Formu gönder" />
+</form>
+
+
+</body>
+</html>
